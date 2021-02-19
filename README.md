@@ -3,16 +3,17 @@ A similar roulette to other case opening sites. Not that much similar but i'm tr
 ## Table of contents
 * [Setup](#setup)
 * [Options](#options)
+* [Examples](#examples)
 * [Version](#version)
 * [To-do](#to-do)
 * [Features](#features)
 ## Setup
 Paste this in head section:
-```
+```html
 <script src="https://raw.githubusercontent.com/yinee-c/roulette/main/roulette.js"></script>
 ```
 and this at the end of body section:
-```
+```js
     <script>
         var rol = new Roulette({});
         // Define here your own event listener and then add rol.start();
@@ -25,6 +26,8 @@ and this at the end of body section:
 That's all what you need to do!
 ## Options
 {soon ._.}
+## Examples
+Template is in this repository, just open index.html! Oh.. There's also a template of CSS! :)
 ## Version
 Currently 1.1;
 ## To-do
