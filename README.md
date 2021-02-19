@@ -40,4 +40,4 @@ Currently 1.1;
 * Random items
 * Max chance
 * Animation of rolling to the left
-* and more soon
+* and more.. i'll write here more later
