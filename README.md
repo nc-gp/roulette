@@ -13,7 +13,7 @@ Paste this in head section:
 <script src="https://raw.githubusercontent.com/yinee-c/roulette/main/roulette.js"></script>
 ```
 and this at the end of body section:
-```js
+```html
     <script>
         var rol = new Roulette({});
         // Define here your own event listener and then add rol.start();
