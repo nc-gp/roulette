@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+}
+
+#container {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px #000028 solid;
+    position: relative;
+}
+
+#container #line {
+    width: 2px;
+    height: 100%;
+    background: #000028;
+    position: absolute;
+    top: 0;
+    margin-left: 50%;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.8);
+}
+
+#container #wrap {
+    width: 20000px;
+    height: 200px;
+    background: #320064;
+    display: inline-flex;
+    position: relative;
+    right: 0px;
+    margin-left: 0;
+}
+
+#container #wrap .slide {
+    width: 200px;
+    height: 100%;
+    margin-left: 1px;
+    margin-right: 1px;
+    display: inline-block;
+    overflow: hidden;
+    background: #623094;
+    transition: opacity 0.3s ease;
+    font-size: 100px;
+    line-height: 1.9;
+}
+
+@media (max-width: 500px) {
+    #container #line {
+        margin-left: 50vw;
+    }
+}
