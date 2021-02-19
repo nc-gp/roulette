@@ -3,7 +3,8 @@ A similar roulette to other case opening sites. Not that much similar but i'm tr
 ## Table of contents
 * [Setup](#setup)
 * [Options](#options)
-* [Examples](#examples)
+* [Example](#example)
+* [Preview](#preview)
 * [Version](#version)
 * [To-do](#to-do)
 * [Features](#features)
@@ -26,8 +27,11 @@ and this at the end of body section:
 That's all what you need to do!
 ## Options
 {soon ._.}
-## Examples
+## Example
 Template is in this repository, just open index.html! Oh.. There's also a template of CSS! :)
+## Preview
+A gif preview!
+![](preview.gif)
 ## Version
 Currently 1.1;
 ## To-do
