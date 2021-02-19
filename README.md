@@ -23,6 +23,14 @@ and this at the end of body section:
         });
     </script>
 ```
+last one in body, where you want:
+```html
+    <div id="container">
+        <div id="wrap"></div>
+        <div id="line"></div>
+    </div>
+    <div id="winContainer"></div>
+```
 
 That's all what you need to do!
 ## Options
