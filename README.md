@@ -34,7 +34,18 @@ last one in body, where you want:
 
 That's all what you need to do!
 ## Options
-{soon ._.}
+| Option | Description | Type |
+| ------ | ------ | ------ |
+| timer | The time, in milliseconds (thousandths of a second) | Number |
+| maxChance | Max random chance number for items | Number |
+| containerId | Id name for element | String |
+| slideContainerId | Id name for element | String |
+| slideClassName | Class name for element  | String |
+| lineId | Id name for element | String |
+| itemsRender | Items to renderer | Number |
+| items | Your items | Object |
+| outputWin | After roll is done output a win item | Boolean |
+| outputWinId | Id name for element | String |
 ## Example
 Template is in this repository, just open index.html! Oh.. There's also a template of CSS! :)
 ## Preview
