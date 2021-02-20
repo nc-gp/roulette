@@ -3,7 +3,7 @@ A similar roulette to other case opening sites. Not that much similar but i'm tr
 ## Table of contents
 * [Setup](#setup)
 * [Options](#options)
-* [CSS Example](#example)
+* [Examples of Stylesheets](#example)
 * [Preview](#preview)
 * [Version](#version)
 * [To-do](#to-do)
@@ -53,16 +53,7 @@ Click link below!
 ## Preview
 A gif preview!
 ![](preview.gif)
-## Version
-Currently 1.1;
 ## To-do
-* Cache DOM elements in js.
-* More animations
-* Better css.
-* and more..
+* I'll update soon ._.
 ## Features
-* Customizable options
-* Random items
-* Max chance
-* Animation of rolling to the left
-* and more.. i'll write here more later
+* I'll update soon ._.
