@@ -25,28 +25,20 @@ and this at the end of body section:
 ```
 last one in body, where you want:
 ```html
-    <div id="container">
-        <div id="wrap"></div>
-        <div id="line"></div>
-    </div>
-    <div id="winContainer"></div>
+    <div id="roulette"></div>
 ```
-
+You can also costumize id of this element.
 That's all what you need to do!
 ## Options
 You don't need to set every option in init function. Roulette have default options.
-| Option | Description | Type |
+| Option | Description | Default | Type |
 | ------ | ------ | ------ |
-| timer | The time, in milliseconds (thousandths of a second) | Number |
-| maxChance | Max random chance number for items | Number |
-| containerId | Id name for element | String |
-| slideContainerId | Id name for element | String |
-| slideClassName | Class name for element  | String |
-| lineId | Id name for element | String |
-| itemsRender | Items to renderer | Number |
-| items | Your items | Object |
-| outputWin | After roll is done output a win item | Boolean |
-| outputWinId | Id name for element | String |
+| timer | The time, in milliseconds (thousandths of a second) | 20 | Number |
+| maxChance | Max random chance number for items | 100 | Number |
+| element | Id name for element | roulette | String |
+| itemsRender | Items to renderer | 56 | Number |
+| items | Your items | [[1, 49, "a"],[50, 100, "b"]] | Object |
+| outputWin | After roll is done output a win item | false | Boolean |
 ## Example
 Click link below!
  - [CSS](https://github.com/yinee-c/roulette/edit/main/roulette.css)
@@ -56,4 +48,9 @@ A gif preview!
 ## To-do
 * I'll update soon ._.
 ## Features
+* Auto-update (never miss an update!) checker if you want this script on your server.
+* Costumizable options
+* Custom CSS
+* Random items render
+* Max chance
 * I'll update soon ._.
