@@ -3,7 +3,7 @@ A similar roulette to other case opening sites. Not that much similar but i'm tr
 ## Table of contents
 * [Setup](#setup)
 * [Options](#options)
-* [Example](#example)
+* [CSS Example](#example)
 * [Preview](#preview)
 * [Version](#version)
 * [To-do](#to-do)
@@ -34,6 +34,7 @@ last one in body, where you want:
 
 That's all what you need to do!
 ## Options
+You don't need to set every option in init function. Roulette have default options.
 | Option | Description | Type |
 | ------ | ------ | ------ |
 | timer | The time, in milliseconds (thousandths of a second) | Number |
@@ -47,7 +48,8 @@ That's all what you need to do!
 | outputWin | After roll is done output a win item | Boolean |
 | outputWinId | Id name for element | String |
 ## Example
-Template is in this repository, just open index.html! Oh.. There's also a template of CSS! :)
+Click link below!
+[CSS](https://github.com/yinee-c/roulette/edit/main/roulette.css)
 ## Preview
 A gif preview!
 ![](preview.gif)
