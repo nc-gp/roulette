@@ -3,7 +3,7 @@
 
     this.Roulette = function() {
 
-        this.version = "1.01";
+        this.version = "1.2";
         this.author = "yinee";
         this.rouletteActive = null;
         this.lastWin = null;
@@ -48,37 +48,42 @@
         this.movementX = 0;
         this.renderTime = 0;
 
+        this.containerId = "r-container";
+        this.slidesId = "r-slides";
+        this.slideCN = "r-slide";
+        this.lineId = "r-line";
+        this.winId = "r-win";
+
         rol = this;
 
         // Default options.
         var defaultOptions = {
             timer: 20,
             maxChance: 100,
-            containerId: 'container',
-            slideContainerId: 'wrap',
-            slideClassName: 'slide',
-            lineId: 'line',
+            element: 'roulette',
             itemsRender: 56,
             items: [
                 [1, 49, "a"],
                 [50, 100, "b"]
             ],
             outputWin: false,
-            outputWinId: 'winContainer',
         }
 
         // {options} Costumizable options.
         if (arguments[0] && typeof arguments[0] === "object") {
             this.options = extendDefaultOptions(defaultOptions, arguments[0])
         }
+
+        checkUpdate(this.version);
+        createElements(rol);
     }
 
     // Start function
     Roulette.prototype.start = function() {
         // Get DOM elements. (not cached. i'll fix in future)
-        var container = document.getElementById(this.options.containerId);
-        var slideContainer = document.getElementById(this.options.slideContainerId);
-        var line = document.getElementById(this.options.lineId);
+        var container = document.getElementById(this.containerId);
+        var slideContainer = document.getElementById(this.slidesId);
+        var line = document.getElementById(this.lineId);
         var outputElement = null;
         // All missing elements.
         var elements = [];
@@ -100,7 +105,7 @@
             throw new Error("An important elements '" + elements + "' are missing in HTML!");
         }
         if (this.options.outputWin) {
-            outputElement = document.getElementById(this.options.outputWinId);
+            outputElement = document.getElementById(this.winId);
             if (outputElement === null) {
                 throw new Error("An outputWinId is missing in HTML!");
             }
@@ -123,12 +128,12 @@
 
             var cell = document.createTextNode(inner);
             inElement.appendChild(cell);
-            slideElement.className = this.options.slideClassName;
+            slideElement.className = this.slideCN;
             slideElement.appendChild(inElement);
             slideContainer.appendChild(slideElement);
         }
         // Some.
-        var slides = document.getElementsByClassName(rol.options.slideClassName);
+        var slides = document.getElementsByClassName(rol.slideCN);
         this.lastWin = slides[54].cloneNode(true);
         // Start interval
         var roll = setInterval(function(rol) {
@@ -165,5 +170,32 @@
             }
         }
         return source;
+    }
+
+    function checkUpdate(actualVersion) {
+        fetch('https://raw.githubusercontent.com/yinee-c/roulette/main/VERSION')
+            .then(response => response.text())
+            .then((response) => {
+                if (actualVersion != response) console.warn("An new update for roulette library.\nCheck out: https://github.com/yinee-c/roulette/");
+            });
+    }
+
+    function createElements(o) {
+        var container = document.createElement("div"),
+            slides = document.createElement("div"),
+            line = document.createElement("div"),
+            rWin = document.createElement("div"),
+            element = document.getElementById(o.options.element);
+
+        container.id = o.containerId;
+        slides.id = o.slidesId;
+        line.id = o.lineId;
+        rWin.id = o.winId;
+
+        container.appendChild(slides);
+        container.appendChild(line);
+
+        element.appendChild(container);
+        element.appendChild(rWin);
     }
 })();
