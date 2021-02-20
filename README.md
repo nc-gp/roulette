@@ -32,7 +32,7 @@ That's all what you need to do!
 ## Options
 You don't need to set every option in init function. Roulette have default options.
 | Option | Description | Default | Type |
-| ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ |
 | timer | The time, in milliseconds (thousandths of a second) | 20 | Number |
 | maxChance | Max random chance number for items | 100 | Number |
 | element | Id name for element | roulette | String |
