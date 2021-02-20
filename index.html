@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>roulette</title>
+    <title>xd</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='roulette.css'>
 </head>
@@ -12,12 +12,7 @@
 <body>
     <button id="example">example button</button>
 
-    <div id="container">
-        <div id="wrap"></div>
-        <div id="line"></div>
-    </div>
-
-    <div id="winContainer"></div>
+    <div id="roulette"></div>
 
     <script src='roulette.js'></script>
 
@@ -25,9 +20,8 @@
         var rol = new Roulette({
             outputWin: true,
         }); // Create new roulette.
-        document.getElementById('example').addEventListener('click', function() { // Event to element on click or mouse up...
+        document.getElementById('example').addEventListener('click', function() {
             rol.start(); // Open 'case'.
-            rol.info(); // Yeah, you can remove this line.
         });
     </script>
 </body>
