@@ -49,7 +49,7 @@ You don't need to set every option in init function. Roulette have default optio
 | outputWinId | Id name for element | String |
 ## Example
 Click link below!
-[CSS](https://github.com/yinee-c/roulette/edit/main/roulette.css)
+ - [CSS](https://github.com/yinee-c/roulette/edit/main/roulette.css)
 ## Preview
 A gif preview!
 ![](preview.gif)
