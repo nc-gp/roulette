@@ -37,7 +37,7 @@ You don't need to set every option in init function. Roulette have default optio
 | maxChance | Max random chance number for items | 100 | Number |
 | element | Id name for element | roulette | String |
 | itemsRender | Items to renderer | 56 | Number |
-| items | Your items | [[1, 49, "a"],[50, 100, "b"]] | Object |
+| items | Your items | `[[1, 49, "a"],[50, 100, "b"]]` | Object |
 | outputWin | After roll is done output a win item | false | Boolean |
 ## Example
 Click link below!
