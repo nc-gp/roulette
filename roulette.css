@@ -3,16 +3,19 @@ body {
     margin: 0;
 }
 
-#container {
+#roulette {}
+
+#roulette #r-container {
     width: 600px;
     height: 200px;
     margin: 0 auto;
     overflow: hidden;
     border: 2px #000028 solid;
+    background: #320064;
     position: relative;
 }
 
-#container #line {
+#roulette #r-container #r-line {
     width: 2px;
     height: 100%;
     background: #000028;
@@ -22,31 +25,31 @@ body {
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.8);
 }
 
-#container #wrap {
+#roulette #r-container #r-slides {
     width: 20000px;
     height: 200px;
-    background: #320064;
     display: inline-flex;
     position: relative;
     right: 0px;
     margin-left: 0;
 }
 
-#container #wrap .slide {
+#roulette #r-container #r-slides .r-slide {
     width: 200px;
     height: 100%;
     margin-left: 1px;
     margin-right: 1px;
     display: inline-block;
     overflow: hidden;
-    background: #623094;
+    background-color: #623094;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23320064' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     transition: opacity 0.3s ease;
     font-size: 100px;
     line-height: 1.9;
 }
 
 @media (max-width: 500px) {
-    #container #line {
+    #roulette #r-container #r-line {
         margin-left: 50vw;
     }
 }
